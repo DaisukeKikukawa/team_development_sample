@@ -2,70 +2,69 @@
   background-color: red;
 } */
 
-#header {
+/* #header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 
-.l-header__site-title {
+/* .l-header__site-title {
   display: flex;
   align-items: center;
-}
+} */
 
-l-header__author {
+/* l-header__author {
   font-size: 12px;
   line-height: 1.4em;
   display: flex;
 
-}
+} */
 
-.l-gnav__list {
+/* .l-gnav__list {
   display: flex;
   /* padding: 15px 30px 15px 0; */
-}
+/* } */
 
-.l-gnav__contents--before-login {
+/* .l-gnav__contents--before-login {
   /* padding: 15px 30px 15px 0; */
   /* margin: 5px; */
-}
 
-.l-gnav__link {
+/* .l-gnav__link {
   padding-right: 20px;
   list-style: none;
   text-decoration: none;
-}
+} */
 
-.l-gnav__link:hover {}
+/* .l-gnav__link:hover {} */
 
-.l-gnav__button {
+/* .l-gnav__button {
   padding-right: 20px;
   list-style: none;
   text-decoration: none;
-}
+} */
 
-a:hover {
+/* a:hover {
   color: red;
-}
+} */
 
-.c-button--square-yellow {
+/* .c-button--square-yellow {
   border-radius: 4px;
   padding: 16px 24px;
   font-size: 16px;
   color: white !important;
   text-decoration: none;
   background-color: #eb6100;
-}
+} */
 
-.c-button--square-yellow:hover {
+/* .c-button--square-yellow:hover {
   color: #fff !important;
   background: #ff6b01 !important;
-}
+} */
 
-.login-button {
+/* .login-button {
   color: gray !important;
-}
+} */
 
-.login-button:hover {
+/* .login-button:hover {
   color: rgb(165, 163, 163) !important;
-}
+} */

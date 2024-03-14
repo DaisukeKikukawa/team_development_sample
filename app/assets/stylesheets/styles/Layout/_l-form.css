@@ -1,0 +1,92 @@
+.l-form {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+  .l-form {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.l-form__nav {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 640px) {
+  .l-form__nav {
+    margin-bottom: 30px;
+  }
+}
+
+.l-form__nav li {
+  display: inline-block;
+  padding: 5px 14px 7px 14px;
+}
+
+@media screen and (max-width: 640px) {
+  .l-form__nav li {
+    display: block;
+    padding: 0;
+    border-bottom: 1px solid #c0c6d6;
+  }
+  .l-form__nav li:first-child {
+    border-top: 1px solid #c0c6d6;
+  }
+}
+
+.l-form__nav li.l-form__mypage-edit {
+  padding: 5px 14px 7px 34px;
+}
+
+@media screen and (max-width: 640px) {
+  .l-form__nav li.l-form__mypage-edit {
+    padding: 0;
+  }
+}
+
+.l-form__nav li a {
+  display: inline-block;
+  font-size: 14px;
+  color: #575F74;
+}
+
+@media screen and (max-width: 640px) {
+  .l-form__nav li a {
+    padding: 11px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .l-form__nav li a {
+    font-size: 16px;
+  }
+}
+
+.l-form__nav li a.active {
+  font-weight: bold;
+}
+
+.l-form__mypage-edit {
+  position: relative;
+  background-color: #E5E8EF;
+}
+
+.l-form__mypage-edit svg {
+  position: absolute;
+  top: 12px;
+  left: 11px;
+}
+
+@media screen and (max-width: 640px) {
+  .l-form__mypage-edit svg {
+    position: relative;
+    top: 0;
+  }
+}
+
+.l-form__mypage-edit a.active {
+  font-weight: bold;
+}
