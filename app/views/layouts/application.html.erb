@@ -26,19 +26,35 @@
       </div>
       <div class="l-header__navigation">
         <nav class="l-gnav">
+        <% if user_signed_in? %>
           <div class="l-gnav__contents--before-login">
             <ul class="l-gnav__list">
-            <li class="l-gnav__button">
-                <%= link_to '日報を投稿する', '#', style: "text-decoration: none; color: blue;", class: 'c-button--square-yellow' %>
-              </li>
-              <li class="l-gnav__link">
-                <%= link_to 'ログイン', '#', style: "text-decoration: none; color: blue;", class: "login-button" %>
-              </li>
               <li class="l-gnav__button">
-                <%= link_to '無料会員登録', '#', style: "text-decoration: none; color: blue;", class: 'c-button--square-yellow' %>
+                <%= link_to '日報を投稿する', new_report_path, style: "text-decoration: none; color: blue;margin-right:15px;", class: 'c-button--square-yellow' %>
+              </li>
+              <li class="l-gnav__user-link">
+                    <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, style: "margin-right:15px;" %>
+              </li>
+              <li>
+                <%= link_to 'マイページ', '#', style: "margin-right:15px;" %>
               </li>
             </ul>
           </div>
+        <% else %>
+          <div class="l-gnav__contents--before-login">
+            <ul class="l-gnav__list">
+              <li class="l-gnav__button">
+                <%= link_to '日報を投稿する', new_report_path, style: "text-decoration: none; color: blue;", class: 'c-button--square-yellow' %>
+              </li>
+              <li class="l-gnav__link">
+                <%= link_to 'ログイン',new_user_session_path, style: "text-decoration: none; color: blue; padding-left:30px; font-weight:bold;font-size:17px;", class: "login-button" %>
+              </li>
+              <li class="l-gnav__button">
+                <%= link_to '無料会員登録',new_user_registration_path, style: "text-decoration: none; color: blue;", class: 'c-button--square-yellow' %>
+              </li>
+            </ul>
+          </div>
+        <% end %>
         </nav>
       </div>
     </header>
